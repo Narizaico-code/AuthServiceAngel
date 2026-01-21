@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "/cIQJcNYZ0U=",
+  "dgSpecHash": "i881cJzJAOI=",
   "success": true,
   "projectFilePath": "C:\\2024435\\AuthServiceAngel\\src\\AuthServiceAngel.Persistence\\AuthServiceAngel.Persistence.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Informatica\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.9\\microsoft.extensions.dependencyinjection.abstractions.9.0.9.nupkg.sha512",
+    "C:\\Users\\Informatica\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.9\\microsoft.extensions.logging.abstractions.9.0.9.nupkg.sha512",
+    "C:\\Users\\Informatica\\.nuget\\packages\\system.diagnostics.diagnosticsource\\9.0.9\\system.diagnostics.diagnosticsource.9.0.9.nupkg.sha512"
+  ],
   "logs": []
 }
