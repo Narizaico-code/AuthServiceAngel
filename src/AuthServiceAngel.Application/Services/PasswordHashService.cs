@@ -107,6 +107,31 @@ public class PasswordHashService : IPasswordHashService
         var salt = new byte[SaltSize];
         var hash = new byte[HashSize];
 
-        
+        Array.Copy(hashBytes, 0, salt, 0, SaltSize);
+        Array.Copy(hashBytes, SaltSize, hash, 0, HashSize);
+
+        var argon2 = new Argon2id(Encoding.UTF8.GetBytes(password))
+        {
+            Salt = salt,
+            DegreeOfParallelism = Parallelism,
+            Iterations = Iterations,
+            MemorySize = Memory
+        };
+
+        var computedHash = argon2.GetBytes(HashSize);
+        return hash.SequenceEqual(computedHash);
     }   
+
+    private static string FromBase64UrlSafe(string base64Safe)
+    {
+        string base64 = base64Safe.Replace('-', '+').Replace('_', '/');
+
+        switch (base64.Length % 4)
+        {
+            case 2: base64 += "=="; break;
+            case 3: base64 += "="; break;
+        }
+
+        return base64;
+    }
 }
