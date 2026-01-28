@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AuthServiceAngel.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d94bfdedb146397a4a85267f5fcbbb9ad27d01fd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e592d27c1bd1eeb711c46825d874b933f3fee0b")]
 [assembly: System.Reflection.AssemblyProductAttribute("AuthServiceAngel.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AuthServiceAngel.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
