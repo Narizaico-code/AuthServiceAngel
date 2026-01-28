@@ -23,7 +23,7 @@ public class RoleRepository(ApplicationDbContext context) : IRoleRepository
             .CountAsync();
     }
 
-    public async Task<IReadOnlyCollection<User>> GetUserByRoleAsync(string roleName)
+    public async Task<IReadOnlyCollection<User>> GetUsersByRoleAsync(string roleName)
     {
         var users = await context.Users
             .Include(u => u.UserProfile)
